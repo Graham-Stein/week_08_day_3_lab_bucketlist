@@ -24,3 +24,5 @@ BucketList.prototype.getData = function () {
     })
     .catch(console.error);
 };
+
+module.exports = BucketList;
