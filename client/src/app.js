@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const bucketFormView = new BucketListFormView(bucketForm);
   bucketFormView.bindEvents();
 
+  const bucketContainer = document.querySelector('div#bucket-list');
+  const bucketListGridView = new BucketListGridView(bucketContainer);
+  bucketListGridView.bindEvents();
+
+
   const url = 'http://localhost:3000/api/bucketList';
   const bucketList = new BucketList(url);
   bucketList.bindEvents();
